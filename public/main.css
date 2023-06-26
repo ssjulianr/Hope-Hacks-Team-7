@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+/****************************************  Nav Section  *******************************************/
+h1 {
+  text-align: center;
+}
+body {
+  margin: 0px;
+}
+nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 14px 16px;
+}
+a {
+  text-decoration: none;
+  color: seashell;
+}
+li {
+  list-style: none;
+  float: right;
+}
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover {
+  color: skyblue;
+  border-radius: 1rem;
+}
+li {
+  display: contents;
+}
+ul {
+  display: contents;
+}
+li {
+  float: right;
+}
+.logo {
+  color: white;
+  z-index: 1;
+}
+.nav-borader {
+  border: solid skyblue;
+  border-radius: 1rem;
+}
+.nav-menu {
+  font: small-caps bold 18px/30px Berling;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 35px;
+  z-index: 10;
+}
+/******************************************  Banner Section  *****************************/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+.search-bar {
+  background-color: rgba(145, 141, 141, 0.4);
+  color: white;
+  line-height: 28px;
+  font-size: 18px;
+  max-width: 295px;
+  height: 31px;
+  width: 295px;
+  padding-right: 33px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid rgba(000, 000, 000, 0.4);
+}
+.search-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: rgba(000, 000, 000, 0.9);
+  color: white;
+  border: 1px solid rgba(168, 160, 236, 0.4);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background: transparent;
+  color: #879CEB;
+}
+/*****************************************  Widgets Section  ****************************/
+.widget-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 1rem;
+}
+.widget-new-york {
+  width: 18rem;
+  margin: 3rem;
+  border-radius: 10%;
+  background-image: url(/photos/newyork.jpeg);
+  color: white;
+}
+.widget-charlotte {
+  width: 18rem;
+  margin: 3rem;
+  border-radius: 10%;
+  background-image: url(/photos/charlotte.jpeg);
+  color: white;
+}
+.widget-new-orleans {
+  width: 18rem;
+  margin: 3rem;
+  border-radius: 10%;
+  background-image: url(/photos/new-orleans.jpeg);
+  color: white;
+}
+.contain:hover {
+  transform: scale(1.08);
+  transition: 200ms ease-in;
+}
+/****************************************  Footer Section  ******************************/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100dvw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.footer-navbar {
+  text-align: center;
+  margin-top: 0.938rem;
+}
+.footer-navbar a {
+  color: white;
+  font-size: 1.125rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.3rem;
+  text-decoration: none;
+}
+.copy {
+  color: white;
+}
+.footer-borader {
+  border: solid rgb(69, 55, 55);
+  border-radius: 1rem;
+}
+
+.banner{
+  background: skyblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  width: 600px;
+  margin-bottom: 800px;
+}
+
+.box {
+  flex: 1;
+  background-color: transparent;
+ 
+}
+
+.blue {
+  background-image: linear-gradient(to bottom right,darkred, tomato);
+}
+
+.green {
+  background-image: linear-gradient(to bottom right, darkgreen, lime);
+}
+
+.red {
+  background-image: linear-gradient(to bottom right, darkblue, dodgerblue);
+}
+
+.yellow {
+  background-image: linear-gradient(to bottom right, darkgoldenrod, yellow);
+}
