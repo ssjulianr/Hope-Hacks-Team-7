@@ -31,9 +31,9 @@ To run the Aireon application, follow these steps:
  
      npm run start
    
-5) Open your web browser and visit http://localserver:777 to access the Aireon website.
+5) Open your web browser and visit http://localhost:777 to access the Aireon website.
 
-6) In order to access the Admin Console without implementing a database, you can visit http://localserver:777/admin.
+6) In order to access the Admin Console without implementing a database, you can visit http://localhost:777/admin.
 
 7) To create and manage users, you will need a database named HopeHacks with a table named Users. The table should hold an auto incrementing ID, Username, and Password. 
  
