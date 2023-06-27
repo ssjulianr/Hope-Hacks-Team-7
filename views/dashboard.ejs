@@ -836,14 +836,23 @@ menuBar.addEventListener('click', function () {
   sidebar.classList.toggle('hide');
 });
 
- // Retrieve username from localStorage
- var username = localStorage.getItem("username");
+function handleLogin(event) {
+  event.preventDefault();
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
 
-// Update the navigation bar with the username
-var usernameSection = document.getElementById("username-section");
-if (usernameSection) {
-  usernameSection.textContent = username;
+  // Check username and save it to localStorage
+  if (username) {
+    localStorage.setItem("username", username);
+
+    // Update the navigation bar with the username
+    var usernameSection = document.getElementById("username-section");
+    if (usernameSection) {
+      usernameSection.textContent = username;
+    }
+  }
 }
+
 
 </script>
 </body>
