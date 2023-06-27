@@ -832,23 +832,12 @@ menuBar.addEventListener('click', function () {
   sidebar.classList.toggle('hide');
 });
 
-const counterButton = document.getElementById('counterButton');
+
 const counterValue = document.getElementById('counterValue');
 
 // Retrieve the counter value from local storage
 let counter = localStorage.getItem('counter') || 0;
 counterValue.textContent = counter;
-
-// Function to increment the counter and update the counter value element and local storage
-function incrementCounter() {
-  counter++;
-  counterValue.textContent = counter;
-  localStorage.setItem('counter', counter);
-}
-
-// Attach the incrementCounter function to the button's onclick event
-counterButton.onclick = incrementCounter;
-
 
  </script>
 </body>

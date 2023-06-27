@@ -256,7 +256,10 @@
       <form action="/airQuality" method="GET">
         <label for="zipcode">Enter a Zipcode:</label>
         <input type="text" id="zipcode" name="zipcode" required>
+        <div class="containerf">
         <button type="submit" id="counterButton">Get AQI</button>
+        </div>
+        
       </form>
       <h1>Air Quality Information</h1>
       <% if (airQualityData) { %>
@@ -297,12 +300,20 @@
           </footer>
           <script>
 
-const counterValue = document.getElementById('counterValue');
+
+const counterButton = document.getElementById('counterButton');
 
 // Retrieve the counter value from local storage
-let counter = localStorage.getItem('counterValue') || 0;
-counterValue.textContent = counter;
+let counter = localStorage.getItem('counter') || 0;
 
+// Function to increment the counter and update the counter value in local storage
+function incrementCounter() {
+  counter++;
+  localStorage.setItem('counter', counter);
+}
+
+// Attach the incrementCounter function to the button's onclick event
+counterButton.onclick = incrementCounter;
 
 </script>
 </body>
