@@ -238,6 +238,11 @@ app.get('/admin/activity', (req, res) => {
   res.render('activity');
 });
 
+// Handle unknown routes (404 Error Validation)
+app.use((req, res, next) => {
+  res.status(404).send('404: Page Not Found');
+});
+
 app.listen(PORT, () => {
   console.log(`Local Host server is running on Port: ${PORT} `);
 });
