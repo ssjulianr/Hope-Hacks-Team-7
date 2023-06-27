@@ -544,6 +544,7 @@ body {
 		</form>
 		<input type="checkbox" id="switch-mode" hidden>
 		<label for="switch-mode" class="switch-mode"></label>
+		<span id="username-section"></span>
 	</nav>
     <!-- Container Div -->
   <main>
@@ -615,7 +616,13 @@ window.addEventListener('resize', function () {
 menuBar.addEventListener('click', function () {
   sidebar.classList.toggle('hide');
 });
-
+// Retrieve username from localStorage
+var username = localStorage.getItem("username");
+// Update the navigation bar with the username
+var usernameSection = document.getElementById("username-section");
+if (usernameSection) {
+  usernameSection.textContent = username;
+}
 
 </script>
 </body>
