@@ -1,4 +1,4 @@
-#HopeHacks - Aireon
+# HopeHacks - Aireon
 Welcome to the HopeHacks project! Aireon is a web application hosted on localserver:777 that aims to address air quality issues. By entering any US zip code, users can view the Air Quality Index (AQI) and the main pollutants present in that area. The purpose of the website is to raise awareness about local air quality and enable users to take necessary precautions based on the information provided.
 
 Dependencies
