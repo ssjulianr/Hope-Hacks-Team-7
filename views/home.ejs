@@ -7,6 +7,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="main.css" />
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+/****************************************  Nav Section  *******************************************/
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 14px 16px;
+}
+
+a {
+  text-decoration: none;
+  color: seashell;
+}
+
+li {
+  list-style: none;
+  float: right;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  color: skyblue;
+  border-radius: 1rem;
+}
+
+li {
+  display: contents;
+}
+ul {
+  display: contents;
+}
+
+li {
+  float: right;
+}
+.logo {
+  color: white;
+  z-index: 1;
+}
+
+.nav-borader {
+  border: solid skyblue;
+  border-radius: 1rem;
+}
+
+.nav-menu {
+  font: small-caps bold 18px/30px Berling;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 35px;
+  z-index: 10;
+}
+
+/******************************************  Banner Section  *****************************/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 90px;
+
+  background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  font: small-caps bold 18px/30px Berling;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+.search-bar {
+  background-color: rgba(145, 141, 141, 0.4);
+  color: white;
+  line-height: 28px;
+  font-size: 18px;
+  max-width: 295px;
+  height: 31px;
+  width: 295px;
+  padding-right: 33px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid rgba(000, 000, 000, 0.4);
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: rgba(000, 000, 000, 0.9);
+  color: white;
+  border: 1px solid rgba(168, 160, 236, 0.4);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: transparent;
+  color: #879ceb;
+}
+/*****************************************  Widgets Section  ****************************/
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 1rem;
+}
+
+.more-btn{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: rgba(000, 000, 000, 0.9);
+  color: white;
+  border: 1px solid rgba(168, 160, 236, 0.4);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+
+
+/****************************************  Footer Section  ******************************/
+/* footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.footer-navbar {
+  text-align: center;
+  margin-top: 0.938rem;
+}
+.footer-navbar a {
+  color: white;
+  font-size: 1.125rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.3rem;
+  text-decoration: none;
+}
+
+.copy {
+  color: white;
+}
+
+.footer-borader {
+  border: solid skyblue;
+  border-radius: 1rem;
+ 
+} */
+  </style>
 
   <title>Aireon</title>
 </head>
@@ -252,26 +467,40 @@
 
   </nav>
   <div class="nav-borader"></div>
-  <section class="banner">
-  
+    <section class="banner">
+      <h1>Click here to check your air quality</h1>
+      <a href="/airQuality"><button class="search-btn">Check AQI</button></a>
+    </section>
 
-          <div class="footer-borader"></div>
-          <footer>
-            <section class="footer">
-              <footer class="footer-navbar">
-                <ul class="nav-links">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/airQuality">AQI Search</a></li>
-                  <li><a href="/about">About Us</a></li>
-                  <li><a href="/login">Admin</a></li>
-                </ul>
-                <span>
-                  <br />
-                  <p class="copy">&copy; 2023 Aireon</p>
-                </span>
-              </footer>
-            </section>
-          </footer>
+    <h1>How Do We Calculate the Air Quality Index?</h1>
+
+    <section class="more">
+      <img src="data:image/png;base64,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">
+      <h3>We created a new and uniform air quality index - the Aireon AQI to provide a clear and intuitive way to read and understand real-time air quality information.</h3>
+      <a href="/about"><button class="more-btn">Learn More</button></a>
+    </section>
+    
+    <div class="footer-borader"></div></div>
+    <footer>
+      
+      <section class="footer">
+        <footer class="footer-navbar">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/airQuality">AQI Search</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/login">Admin</a></li>
+          </ul>
+          <span>
+            <br />
+            <p class="copy">&copy; 2023 Aireon</p>
+          </span>
+        </footer>
+      </section>
+    </footer>
+   
 </body>
 
+
+         
 </html>

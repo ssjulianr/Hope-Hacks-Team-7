@@ -129,7 +129,7 @@ li {
 }
 .search-btn:hover {
   background: transparent;
-  color: #879CEB;
+  color: #879ceb;
 }
 /*****************************************  Widgets Section  ****************************/
 .widget-section {
@@ -166,7 +166,7 @@ li {
 }
 /****************************************  Footer Section  ******************************/
 .footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100dvw;
@@ -193,11 +193,11 @@ li {
   color: white;
 }
 .footer-borader {
-  border: solid rgb(69, 55, 55);
+  border: solid skyblue;
   border-radius: 1rem;
 }
 
-.banner{
+.banner {
   background: skyblue;
 }
 
@@ -214,11 +214,10 @@ li {
 .box {
   flex: 1;
   background-color: transparent;
- 
 }
 
 .blue {
-  background-image: linear-gradient(to bottom right,darkred, tomato);
+  background-image: linear-gradient(to bottom right, darkred, tomato);
 }
 
 .green {
