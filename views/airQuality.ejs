@@ -266,7 +266,8 @@
       <div class="container">
         <div class="box blue"> <h1>AQI : <%= airQualityData.aqi %></h1></div>
         <div class="box green"><h1>Category : <%= airQualityData.category %></h1></div>
-        <div class="box red"><h1>Pollutants</h1></div>
+        <div class="box red"><h1>Pollutants</h1>
+        </div>
         <% airQualityData.pollutants.forEach(function(pollutant) { %>
           <div class="box yellow">
             <h1>

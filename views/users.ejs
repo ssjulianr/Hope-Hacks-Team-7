@@ -771,14 +771,14 @@ body {
 	<header class="head-title">
 		<div>
 			<h1 style="color: #3C91E6;">Admin Management</h1>
-		  <h2>Add User</h2>
+		  <h2 style="color: #3C91E6;">Add User</h2>
 		  <form id="new-user-form" action="/admin/users/add" method="POST">
 			<div class="form-group">
-			  <label for="username">Username:</label>
+			  <label for="username" style="color: #3C91E6;">Username:</label>
 			  <input type="text" id="username" name="username" required>
 			</div>
 			<div class="form-group">
-			  <label for="password">Password:</label>
+			  <label for="password" style="color: #3C91E6;">Password:</label>
 			  <input type="password" id="password" name="password" required>
 			</div>
 			<div>
@@ -791,22 +791,22 @@ body {
   
 	<!-- User Table -->
 	<section class="user-list">
-	  <h2>Existing Users</h2>
+	  <h2 style="color: #3C91E6;">Existing Users</h2>
 	  <table id="users">
 		<thead>
 		  <tr style="display: flex; justify-content: space-between;">
-			<th style="padding-right: 35%;">Username</th>
-			<th>Actions</th>
+			<th style="padding-right: 35%; color: #3C91E6;" >Username</th>
+			<th style="color: #3C91E6;">Actions</th>
 		  </tr>
 		</thead>
 		<tbody>
 		  <% users.forEach(user => { %>
 			<tr>
-			  <td><%= user.Username %></td>
+			  <td style="color: #3C91E6;"><%= user.Username %></td>
 			  <td>
-				<button style="text-decoration: none;"><a style="text-decoration: none;" href="/admin/users/edit/<%= user.ID %>"><i class="bx bx-edit"></i></a></button>
+				<button style="text-decoration: none;"><a style="text-decoration: none;" href="/admin/users/edit/<%= user.ID %>"><i class="bx bx-edit" style="color: #3C91E6;"></i></a></button>
 				<form action="/admin/users/delete/<%= user.ID %>" method="POST" style="display: inline; text-decoration: none;">
-				  <button type="submit"><i class="bx bx-trash"></i></button>
+				  <button type="submit"><i class="bx bx-trash" style="color: #3C91E6;"></i></button>
 				</form>
 			  </td>
 			</tr>
